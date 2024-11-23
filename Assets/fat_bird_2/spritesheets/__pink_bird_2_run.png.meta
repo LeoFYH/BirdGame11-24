@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 1793d92babaff1f4f98a9f16ad79ba09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3958820562022438315
+    second: __pink_bird_2_run_0
+  - first:
+      213: 2214523157544634818
+    second: __pink_bird_2_run_1
+  - first:
+      213: 2380636757545715885
+    second: __pink_bird_2_run_2
+  - first:
+      213: 1227811406823377137
+    second: __pink_bird_2_run_3
+  - first:
+      213: -6923779735703449439
+    second: __pink_bird_2_run_4
+  - first:
+      213: 552986465839823143
+    second: __pink_bird_2_run_5
+  - first:
+      213: 8524665078073578875
+    second: __pink_bird_2_run_6
+  - first:
+      213: -2261106248652146546
+    second: __pink_bird_2_run_7
+  - first:
+      213: 5619646178575753941
+    second: __pink_bird_2_run_8
+  - first:
+      213: -6991208883721232623
+    second: __pink_bird_2_run_9
+  - first:
+      213: 2980521124491946820
+    second: __pink_bird_2_run_10
+  - first:
+      213: -1168416643657751407
+    second: __pink_bird_2_run_11
+  - first:
+      213: -6092240935734159518
+    second: __pink_bird_2_run_12
+  - first:
+      213: -6857618377143615055
+    second: __pink_bird_2_run_13
+  - first:
+      213: 3370107096644448727
+    second: __pink_bird_2_run_14
+  - first:
+      213: -4766955167451865947
+    second: __pink_bird_2_run_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __pink_bird_2_run_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2908
+        width: 864
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ae32f6ca17f09c0800000000000000
+      internalID: -3958820562022438315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_1
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 2872
+        width: 822
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9035824119bbe10800000000000000
+      internalID: 2214523157544634818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_2
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 2881
+        width: 753
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da800c09488b90120800000000000000
+      internalID: 2380636757545715885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_3
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 2870
+        width: 727
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f841e228ff0a0110800000000000000
+      internalID: 1227811406823377137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1947
+        width: 713
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0195e930bc9ef90800000000000000
+      internalID: -6923779735703449439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_5
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1939
+        width: 719
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7293bf5c24a9ca700800000000000000
+      internalID: 552986465839823143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_6
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1937
+        width: 727
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75d0cf09b1bd4670800000000000000
+      internalID: 8524665078073578875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_7
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 1970
+        width: 734
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e883ca1c8dfee90e0800000000000000
+      internalID: -2261106248652146546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1087
+        width: 742
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2a36ddc6efcfd40800000000000000
+      internalID: 5619646178575753941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_9
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1082
+        width: 734
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f9d3faf8c3afe90800000000000000
+      internalID: -6991208883721232623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_10
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1073
+        width: 727
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44be3e6db20fc5920800000000000000
+      internalID: 2980521124491946820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_11
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1056
+        width: 718
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194202dc043f8cfe0800000000000000
+      internalID: -1168416643657751407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 122
+        width: 709
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d873a523047ba0800000000000000
+      internalID: -6092240935734159518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_13
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 115
+        width: 720
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b10a215b68d4d0a0800000000000000
+      internalID: -6857618377143615055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_14
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 115
+        width: 744
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1f38e7c8605ce20800000000000000
+      internalID: 3370107096644448727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_bird_2_run_15
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 104
+        width: 813
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac91d7188f58ddb0800000000000000
+      internalID: -4766955167451865947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

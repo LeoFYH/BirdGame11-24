@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: fd6fe2167377cef44b40d058e1fc4515
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3107042076605292961
+    second: __black_bird_2_flap_0
+  - first:
+      213: -534094902917459301
+    second: __black_bird_2_flap_1
+  - first:
+      213: -4927066661950849736
+    second: __black_bird_2_flap_2
+  - first:
+      213: -7005912899646750422
+    second: __black_bird_2_flap_3
+  - first:
+      213: -3093744755666661398
+    second: __black_bird_2_flap_4
+  - first:
+      213: 3792196221315643939
+    second: __black_bird_2_flap_5
+  - first:
+      213: 1026209429373054341
+    second: __black_bird_2_flap_6
+  - first:
+      213: 3961597559709636074
+    second: __black_bird_2_flap_7
+  - first:
+      213: 7350597284534794708
+    second: __black_bird_2_flap_8
+  - first:
+      213: 5955826201114315963
+    second: __black_bird_2_flap_9
+  - first:
+      213: -6237353460360656598
+    second: __black_bird_2_flap_10
+  - first:
+      213: 8437569559656797595
+    second: __black_bird_2_flap_11
+  - first:
+      213: 2928093606067145665
+    second: __black_bird_2_flap_12
+  - first:
+      213: -4069733284154924025
+    second: __black_bird_2_flap_13
+  - first:
+      213: -6229850150622457774
+    second: __black_bird_2_flap_14
+  - first:
+      213: -6299653691651107104
+    second: __black_bird_2_flap_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __black_bird_2_flap_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2910
+        width: 815
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5edfb171b191e4d0800000000000000
+      internalID: -3107042076605292961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_1
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2910
+        width: 799
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92124bf3838698f0800000000000000
+      internalID: -534094902917459301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_2
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 2910
+        width: 794
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dffb5c9fa8f9bb0800000000000000
+      internalID: -4927066661950849736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_3
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 2910
+        width: 793
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a218a31365ff5ce90800000000000000
+      internalID: -7005912899646750422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1983
+        width: 788
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefc2cc398fc015d0800000000000000
+      internalID: -3093744755666661398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_5
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1983
+        width: 760
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32af8121f5690a430800000000000000
+      internalID: 3792196221315643939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_6
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1983
+        width: 808
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58defe6f904dd3e00800000000000000
+      internalID: 1026209429373054341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_7
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1983
+        width: 812
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae51c89bdfb6af630800000000000000
+      internalID: 3961597559709636074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1056
+        width: 795
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9b5aff841920660800000000000000
+      internalID: 7350597284534794708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_9
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1056
+        width: 813
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc0265ef5857a250800000000000000
+      internalID: 5955826201114315963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_10
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1056
+        width: 821
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2946a023187079a0800000000000000
+      internalID: -6237353460360656598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_11
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1056
+        width: 817
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b951ef27fc4481570800000000000000
+      internalID: 8437569559656797595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 129
+        width: 815
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb89bafe9da2a820800000000000000
+      internalID: 2928093606067145665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_13
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 129
+        width: 815
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704ac53f3276587c0800000000000000
+      internalID: -4069733284154924025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_14
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 129
+        width: 815
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2501c309b402b89a0800000000000000
+      internalID: -6229850150622457774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __black_bird_2_flap_15
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 129
+        width: 815
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6582d28522398a0800000000000000
+      internalID: -6299653691651107104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

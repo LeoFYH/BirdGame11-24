@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 1064ffbccf3d59b4395e0c816b422cd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5099692288436329220
+    second: __green_bird_2_run_0
+  - first:
+      213: 3097851966927321600
+    second: __green_bird_2_run_1
+  - first:
+      213: 9089572936454719532
+    second: __green_bird_2_run_2
+  - first:
+      213: -2663740350321129630
+    second: __green_bird_2_run_3
+  - first:
+      213: -1150297380269013704
+    second: __green_bird_2_run_4
+  - first:
+      213: -4411103679341749424
+    second: __green_bird_2_run_5
+  - first:
+      213: 970650242677972176
+    second: __green_bird_2_run_6
+  - first:
+      213: -8026742087006198730
+    second: __green_bird_2_run_7
+  - first:
+      213: -1755320011810328645
+    second: __green_bird_2_run_8
+  - first:
+      213: 4887967399754179869
+    second: __green_bird_2_run_9
+  - first:
+      213: -5240561942112182606
+    second: __green_bird_2_run_10
+  - first:
+      213: -5464726446424139612
+    second: __green_bird_2_run_11
+  - first:
+      213: -6291126446551256743
+    second: __green_bird_2_run_12
+  - first:
+      213: 8822756258612471437
+    second: __green_bird_2_run_13
+  - first:
+      213: -1857524609038572393
+    second: __green_bird_2_run_14
+  - first:
+      213: 3522997693858238927
+    second: __green_bird_2_run_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __green_bird_2_run_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2908
+        width: 864
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf424fb02e04a39b0800000000000000
+      internalID: -5099692288436329220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_1
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 2872
+        width: 822
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ab27763f7cdfa20800000000000000
+      internalID: 3097851966927321600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_2
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 2881
+        width: 753
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2843655d66a42e70800000000000000
+      internalID: 9089572936454719532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_3
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 2870
+        width: 727
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2670c35b34e780bd0800000000000000
+      internalID: -2663740350321129630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1947
+        width: 713
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835c00f80a25900f0800000000000000
+      internalID: -1150297380269013704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_5
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1939
+        width: 719
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b9a6d139c98c2c0800000000000000
+      internalID: -4411103679341749424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_6
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1937
+        width: 727
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc97f3c041787d00800000000000000
+      internalID: 970650242677972176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_7
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 1970
+        width: 734
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634615079984b9090800000000000000
+      internalID: -8026742087006198730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1087
+        width: 742
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf29e4dfb9d3a7e0800000000000000
+      internalID: -1755320011810328645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_9
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1082
+        width: 734
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15a908d37c85d340800000000000000
+      internalID: 4887967399754179869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_10
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1073
+        width: 727
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bed8f8eda8c547b0800000000000000
+      internalID: -5240561942112182606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_11
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1056
+        width: 718
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8d43610446924b0800000000000000
+      internalID: -5464726446424139612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 122
+        width: 709
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9513f3424dd61b8a0800000000000000
+      internalID: -6291126446551256743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_13
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 115
+        width: 720
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86637e721ab07a70800000000000000
+      internalID: 8822756258612471437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_14
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 115
+        width: 744
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794a5bca53fb836e0800000000000000
+      internalID: -1857524609038572393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __green_bird_2_run_15
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 104
+        width: 813
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1d0f6acb334e030800000000000000
+      internalID: 3522997693858238927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

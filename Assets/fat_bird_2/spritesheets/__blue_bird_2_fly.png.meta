@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 4d757b5ec6613184db104dc6a47d61ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5332282121038086914
+    second: __blue_bird_2_fly_0
+  - first:
+      213: 3885298641375890479
+    second: __blue_bird_2_fly_1
+  - first:
+      213: 6376370057115343349
+    second: __blue_bird_2_fly_2
+  - first:
+      213: -2705763107808335835
+    second: __blue_bird_2_fly_3
+  - first:
+      213: -8730448000431632537
+    second: __blue_bird_2_fly_4
+  - first:
+      213: -3028044573343335223
+    second: __blue_bird_2_fly_5
+  - first:
+      213: -2877796326678275550
+    second: __blue_bird_2_fly_6
+  - first:
+      213: 4052418955668189990
+    second: __blue_bird_2_fly_7
+  - first:
+      213: -3227799473644525613
+    second: __blue_bird_2_fly_8
+  - first:
+      213: -8643256629901814720
+    second: __blue_bird_2_fly_9
+  - first:
+      213: 7437294460688009591
+    second: __blue_bird_2_fly_10
+  - first:
+      213: -1795895318651925402
+    second: __blue_bird_2_fly_11
+  - first:
+      213: 4879867624494249241
+    second: __blue_bird_2_fly_12
+  - first:
+      213: -7938545347492692198
+    second: __blue_bird_2_fly_13
+  - first:
+      213: 6441802691584880744
+    second: __blue_bird_2_fly_14
+  - first:
+      213: 2735021021169219996
+    second: __blue_bird_2_fly_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2916
+        width: 843
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcbb5d99adeff5b0800000000000000
+      internalID: -5332282121038086914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_1
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2907
+        width: 798
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c8485778a5be530800000000000000
+      internalID: 3885298641375890479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_2
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2905
+        width: 794
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f91cc298ca6d7850800000000000000
+      internalID: 6376370057115343349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_3
+      rect:
+        serializedVersion: 2
+        x: 2864
+        y: 2905
+        width: 794
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5282ab80ac2337ad0800000000000000
+      internalID: -2705763107808335835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1983
+        width: 811
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fc04cacc737d680800000000000000
+      internalID: -8730448000431632537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_5
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1989
+        width: 843
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc32d9f0893af5d0800000000000000
+      internalID: -3028044573343335223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_6
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 1989
+        width: 835
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ada64fc730018d0800000000000000
+      internalID: -2877796326678275550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1980
+        width: 798
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62379adc1951d3830800000000000000
+      internalID: 4052418955668189990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1051
+        width: 792
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7a937fa7d8433d0800000000000000
+      internalID: -3227799473644525613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_9
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1054
+        width: 804
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044992893ebfc0880800000000000000
+      internalID: -8643256629901814720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_10
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1062
+        width: 843
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7790a4358e3963760800000000000000
+      internalID: 7437294460688009591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_11
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1062
+        width: 843
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c07f509b2b317e0800000000000000
+      internalID: -1795895318651925402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 129
+        width: 811
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915b8e4ffb5c8b340800000000000000
+      internalID: 4879867624494249241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_13
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 124
+        width: 794
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f3e51111f94d190800000000000000
+      internalID: -7938545347492692198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_14
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 124
+        width: 794
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8607219fa61e56950800000000000000
+      internalID: 6441802691584880744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __blue_bird_2_fly_15
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 129
+        width: 811
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c997404c02fb4f520800000000000000
+      internalID: 2735021021169219996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
