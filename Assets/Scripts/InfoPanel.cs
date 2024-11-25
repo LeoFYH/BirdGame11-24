@@ -22,7 +22,7 @@ public class InfoPanel : MonoBehaviour
         this.price = price;
         titleTxt.text = s1;
         descTxt.text = s2;
-        levelTxt.text = $"<color=yellow>{level}</color>/5分钟";
+        levelTxt.text = $"<color=yellow>{level}</color>/分钟";
         progressFill.fillAmount = progress;
         priceText.text = $"售卖 x{price}";
     }

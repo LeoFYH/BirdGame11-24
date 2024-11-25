@@ -102,6 +102,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RecycleFood(Food food)
+    {
+        foods.Remove(food);
+        Destroy(food.gameObject);
+    }
+
     public bool TryGetUntargetedFood(out Food food)
     {
         foreach (var temp in foods)

@@ -13,5 +13,22 @@ public class Food : MonoBehaviour
     {
         y = transform.position.y;
         transform.DOMoveY(y-0.5f, 0.3f);
+        StartCoroutine(nameof(DestroyDelay));
+    }
+
+    private IEnumerator DestroyDelay()
+    {
+        var frame = new WaitForFixedUpdate();
+        float time = 0f;
+        while (time < 4f)
+        {
+            if (isTargeted)
+            {
+                yield break;
+            }
+            time += Time.deltaTime;
+            yield return frame;
+        }
+        GameManager.Instance.RecycleFood(this);
     }
 }

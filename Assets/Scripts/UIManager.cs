@@ -19,8 +19,7 @@ public class UIManager : MonoBehaviour
 
     public void CreatePrompt(string s)
     {
-        GameObject go = Instantiate(promptPre);
-        go.transform.SetParent(transform);
+        GameObject go = Instantiate(promptPre, transform);
         go.transform.localPosition = Vector3.zero;
         go.GetComponent<PromptPanel>().Init(s);
     }
@@ -33,5 +32,10 @@ public class UIManager : MonoBehaviour
     public void ShowInfoPanel(GameObject go, int price, string s1, string s2, int level, float progress)
     {
         infoPanel.Init(go, price, s1, s2, level, progress);
+    }
+    
+    public void RefreshCoin()
+    {
+        coinTxt.text = GameManager.Instance.coin.ToString();
     }
 }

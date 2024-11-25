@@ -1,26 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StorePanel : MonoBehaviour
 {
-    private static StorePanel _instance;
-
-    public static StorePanel Instance
-    {
-        get
-        {
-            return _instance;
-        }
-    }
-
     public Text coinTxt;
+    public Button btn_Buy;
 
     private void Awake()
     {
-        _instance = this;
+        btn_Buy.onClick.AddListener(Buy);
     }
 
     public void Init()
@@ -34,8 +22,9 @@ public class StorePanel : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void Buy()
+    private void Buy()
     {
+        Debug.Log("buy");
         if (GameManager.Instance.noOpenEggs > 0)
         {
             UIManager.Instance.CreatePrompt("还有蛋没孵化");
@@ -53,10 +42,5 @@ public class StorePanel : MonoBehaviour
         {
             UIManager.Instance.CreatePrompt("金币不足");
         }
-    }
-
-    public void RefreshCoin()
-    {
-        coinTxt.text = GameManager.Instance.coin.ToString();
     }
 }

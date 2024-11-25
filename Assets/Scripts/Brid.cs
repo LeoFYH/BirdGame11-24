@@ -122,7 +122,7 @@ public class Brid : MonoBehaviour
         
         _stateMachine.OnUpdate();
 
-        if (Time.time - startTimer >= 300)
+        if (Time.time - startTimer >= 60)
         {
             startTimer = Time.time;
             AddCoins();
@@ -338,6 +338,7 @@ public class Brid : MonoBehaviour
 
     private void AddCoins()
     {
+        Debug.Log("Ôö¼Ó½ð±Ò");
         if (isSmall)
         {
             GameManager.Instance.coin += incomeForMid;
@@ -347,6 +348,6 @@ public class Brid : MonoBehaviour
             GameManager.Instance.coin += incomeForBig;
         }
         
-        StorePanel.Instance.RefreshCoin();
+        UIManager.Instance.RefreshCoin();
     }
 }
