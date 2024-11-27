@@ -22,14 +22,14 @@ public class InfoPanel : MonoBehaviour
         this.price = price;
         titleTxt.text = s1;
         descTxt.text = s2;
-        levelTxt.text = $"<color=yellow>{level}</color>/分钟";
+        levelTxt.text = $"<color=yellow>{level}</color>/min";
         progressFill.fillAmount = progress;
-        priceText.text = $"售卖 x{price}";
+        priceText.text = $"Sale x{price}";
     }
 
     public void Sell()
     {
-        GameManager.Instance.coin += price * level;
+        GameManager.Instance.coin += price;
         UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
         Close();
         Destroy(go);

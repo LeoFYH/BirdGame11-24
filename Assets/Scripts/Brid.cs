@@ -14,6 +14,7 @@ public class Brid : MonoBehaviour
     public bool isSmall = true;
     public Animator anim;
     public SpriteRenderer sr;
+    public int flyIndex = -1;
     float timer;
     bool isIdle=true;
     float x;
@@ -111,8 +112,8 @@ public class Brid : MonoBehaviour
             {
                 if (!isSmall)
                 {
-                    title = "成鸟";
-                    desc = "这是一只成鸟";
+                    title = "Adult bird";
+                    desc = "It's an adult bird";
                 }
 
                 UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall? incomeForMid : incomeForBig,

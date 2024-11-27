@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Terrain
   - Egg
@@ -43,3 +43,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 1721452079
+    locked: 0
+  - name: middle
+    uniqueID: 2358883427
+    locked: 0
+  - name: bird
+    uniqueID: 3436454669
+    locked: 0
+  - name: front
+    uniqueID: 2941746567
+    locked: 0
+  - name: UILayer
+    uniqueID: 3410090343
+    locked: 0
+  m_RenderingLayers:
+  - Default

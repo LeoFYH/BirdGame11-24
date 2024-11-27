@@ -27,7 +27,7 @@ public class StorePanel : MonoBehaviour
         Debug.Log("buy");
         if (GameManager.Instance.noOpenEggs > 0)
         {
-            UIManager.Instance.CreatePrompt("还有蛋没孵化");
+            UIManager.Instance.CreatePrompt("There are also eggs that have not hatched");
             return;
         }
         if (GameManager.Instance.coin >= GameManager.Instance.eggPackage)
@@ -40,7 +40,7 @@ public class StorePanel : MonoBehaviour
         }
         else
         {
-            UIManager.Instance.CreatePrompt("金币不足");
+            UIManager.Instance.CreatePrompt("Insufficient coins");
         }
     }
 }
