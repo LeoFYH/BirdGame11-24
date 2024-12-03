@@ -24,7 +24,7 @@ public class BirdFlyState : StateBase
         float flyTime = distance / _brid.flySpeed;
         if (_brid.flyIndex == 10)
         {
-            _brid.transform.DOScale(0.06f, flyTime).SetEase(Ease.Linear).OnComplete(() =>
+            _brid.transform.DOScale(_brid.farAwayScale, flyTime).SetEase(Ease.Linear).OnComplete(() =>
             {
                 _brid.sr.sortingLayerName = "middle";
                 _brid.sr.sortingOrder = 0;

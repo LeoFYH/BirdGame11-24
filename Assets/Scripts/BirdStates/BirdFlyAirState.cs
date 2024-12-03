@@ -19,7 +19,7 @@ public class BirdFlyAirState : StateBase
         _brid.sr.flipX = target.x > _brid.transform.position.x;
         float distance = Vector3.Distance(_brid.transform.position, target);
         float flyTime = distance / _brid.flySpeed;
-        _brid.transform.DOScale(0.06f, flyTime).SetEase(Ease.Linear).OnComplete(() =>
+        _brid.transform.DOScale(_brid.farAwayScale, flyTime).SetEase(Ease.Linear).OnComplete(() =>
         {
             _brid.sr.sortingLayerName = "middle";
             _brid.sr.sortingOrder = 0;

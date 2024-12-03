@@ -48,7 +48,7 @@ public class BirdEatState : StateBase
                     _brid.eatFoodCount++;
                     if (_brid.eatFoodCount == _brid.eatCountForMid)
                     {
-                        _brid.transform.localScale = Vector3.one * 0.09f;
+                        _brid.transform.localScale = Vector3.one * _brid.middleScale;
                     }
 
                     // timer = 0;
@@ -74,7 +74,7 @@ public class BirdEatState : StateBase
                         _brid.eatFoodCount++;
                         if (_brid.eatFoodCount == _brid.eatCountForMid + _brid.eatCountForBig)
                         {
-                            _brid.transform.localScale = Vector3.one * 0.12f;
+                            _brid.transform.localScale = Vector3.one * _brid.largeScale;
                             int index = Random.Range(0, GameManager.Instance.nests.Count);
                             _brid.nest = GameManager.Instance.nests[index];
                             _brid.nest.Init(_brid);

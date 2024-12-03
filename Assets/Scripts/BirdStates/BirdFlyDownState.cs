@@ -29,7 +29,7 @@ public class BirdFlyDownState : StateBase
         float time = distance / _brid.flySpeed;
         DOTween.Sequence().AppendCallback(() =>
         {
-            _brid.transform.DOScale(0.12f, time).SetEase(Ease.Linear);
+            _brid.transform.DOScale(_brid.largeScale, time).SetEase(Ease.Linear);
             _brid.sr.sortingLayerName = "bird";
             _brid.sr.sortingOrder = 0;
             

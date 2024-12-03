@@ -3,6 +3,14 @@ using UnityEngine;
 
 public class Brid : MonoBehaviour
 {
+    [Header("小鸟大小")]
+    public float smallScale = 0.01f;
+    [Header("中等鸟大小")]
+    public float middleScale = 0.09f;
+    [Header("大鸟大小")]
+    public float largeScale = 0.12f;
+    [Header("飞到远处小鸟大小")] 
+    public float farAwayScale = 0.06f;
     public Transform nestTrans;
     public Vector3 originalPos;
     public Vector3 nestPos;
@@ -92,7 +100,7 @@ public class Brid : MonoBehaviour
         GameObject go = Instantiate(heartPre);
         go.transform.SetParent(transform);
         go.transform.position = heartPos.position;
-        go.transform.localScale = Vector3.one * 0.01f;
+        go.transform.localScale = Vector3.one * smallScale;
         //UIManager.Instance.ShowInfoPanel(gameObject, price, title, desc, level);
     }
 
