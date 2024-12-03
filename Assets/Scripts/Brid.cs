@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Brid : MonoBehaviour
 {
+    public Transform nestTrans;
     public Vector3 originalPos;
     public Vector3 nestPos;
     public float radiusX = 2f;
@@ -76,6 +77,8 @@ public class Brid : MonoBehaviour
         _stateMachine.AddState(new BirdEatState(_stateMachine));
         _stateMachine.AddState(new BirdFlyWaitState(_stateMachine));
         _stateMachine.AddState(new BirdFlyDownState(_stateMachine));
+        _stateMachine.AddState(new BirdFlyAirState(_stateMachine));
+        _stateMachine.AddState(new BirdFlyInAirState(_stateMachine));
         startTimer = Time.time;
     }
 

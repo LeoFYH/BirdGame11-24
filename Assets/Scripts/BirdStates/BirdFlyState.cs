@@ -14,13 +14,15 @@ public class BirdFlyState : StateBase
     public override void OnEnter()
     {
         _brid.anim.SetBool("Fly", true);
-        int random = Random.Range(0, GameManager.Instance.flyPositions.Length);
+        int random = Random.Range(0, GameManager.Instance.flyPositions.Count);
         _brid.flyIndex = random;
-        var target = GameManager.Instance.flyPositions[random].position - Vector3.down * 0.15f;
+        _brid.nestTrans = GameManager.Instance.flyPositions[random];
+        GameManager.Instance.flyPositions.RemoveAt(random);
+        var target = _brid.nestTrans.position - Vector3.up * 0.15f;
         _brid.sr.flipX = target.x > _brid.transform.position.x;
         float distance = Vector3.Distance(_brid.transform.position, target);
         float flyTime = distance / _brid.flySpeed;
-        if (_brid.flyIndex >= 10)
+        if (_brid.flyIndex == 10)
         {
             _brid.transform.DOScale(0.06f, flyTime).SetEase(Ease.Linear).OnComplete(() =>
             {

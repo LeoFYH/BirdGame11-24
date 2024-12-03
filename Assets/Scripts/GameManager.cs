@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject foodPre;
     public List<Food> foods;
     public List<Nest> nests;
-    public Transform[] flyPositions;
+    public List<Transform> flyPositions;
     public int noOpenEggs;
     public float createFoodTime = 0.5f;
     float foodTimer;

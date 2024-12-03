@@ -63,7 +63,21 @@ public class BirdRunState : StateBase
         }
         else if (random == 1)
         {
-            currMachine.ChangeState<BirdFlyState>();
+            if (GameManager.Instance.flyPositions.Count == 0)
+            {
+                currMachine.ChangeState<BirdFlyAirState>();
+                return;
+            }
+
+            int index = Random.Range(0, 2);
+            if (index == 0)
+            {
+                currMachine.ChangeState<BirdFlyState>();
+            }
+            else
+            {
+                currMachine.ChangeState<BirdFlyAirState>();
+            }
         }
     }
 }

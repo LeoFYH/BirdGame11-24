@@ -79,7 +79,7 @@ public class BirdEatState : StateBase
                             _brid.nest = GameManager.Instance.nests[index];
                             _brid.nest.Init(_brid);
                             _brid.nestPos = _brid.nest.transform.position;
-                            GameManager.Instance.nests.Remove(_brid.nest);
+                            //GameManager.Instance.nests.Remove(_brid.nest);
                             _brid.isSmall = false;
                             _brid.distance = Vector3.Distance(_brid.transform.position, _brid.nestPos);
                         }

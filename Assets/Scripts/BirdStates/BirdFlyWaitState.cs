@@ -14,6 +14,7 @@ public class BirdFlyWaitState : StateBase
     public override void OnEnter()
     {
         _brid.anim.SetBool("Fly", false);
+        _brid.anim.Play("FlyWait");
         float waitTime = Random.Range(3f, 8f);
         DOTween.Sequence().AppendCallback(() =>
         {
