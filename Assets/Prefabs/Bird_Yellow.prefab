@@ -138,7 +138,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 343863069046991752}
@@ -157,6 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8396582a19ee404db14cb7468039943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallScale: 0.037
+  middleScale: 0.04
+  largeScale: 0.068
+  farAwayScale: 0.03
   nestTrans: {fileID: 0}
   originalPos: {x: 0, y: 0, z: 0}
   nestPos: {x: 0, y: 0, z: 0}
@@ -175,13 +179,13 @@ MonoBehaviour:
   inNestTime: 5
   isInNest: 0
   heartPre: {fileID: 3924312272529882276, guid: defa4a20ea266a8409cde16fb893e782, type: 3}
-  smallPrice: 10
-  bigPrice: 40
+  smallPrice: 30
+  bigPrice: 50
   level: 1
   title: Juvenile birds
   desc: This is a young bird
   heartPos: {fileID: 7580150105710783560}
-  clickCount: 5
+  clickCount: 10
   eatCountForMid: 10
   eatCountForBig: 10
   incomeForMid: 10
