@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InfoPanel : MonoBehaviour
 {
+    public static InfoPanel instance;
     public Text titleTxt;
     public Text descTxt;
     public Text levelTxt;
@@ -16,7 +17,7 @@ public class InfoPanel : MonoBehaviour
     GameObject go;
     int level;
 
-    public void Init(GameObject go, int price, string s1, string s2, int level, float progress,float progress2)
+    public void Init(GameObject go, int price, string s1, string s2, int level, float progress,float progress2,bool cursorOn)
     {
         gameObject.SetActive(true);
         this.level = level;
@@ -28,6 +29,7 @@ public class InfoPanel : MonoBehaviour
         progressFill.fillAmount = progress;
         IntimacyFill.fillAmount= progress2;
         priceText.text = $"Sale x{price}";
+        cursor.gameObject.SetActive(cursorOn);
     }
 
     public void Sell()

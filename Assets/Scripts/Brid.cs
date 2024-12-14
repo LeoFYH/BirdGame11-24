@@ -131,12 +131,14 @@ public class Brid : MonoBehaviour
                 if (isSmall)
                 {
                     UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall ? incomeForMid : incomeForBig,
-                        eatFoodCount * 1f / 20, 0);
+                        eatFoodCount * 1f / 20, 0,false);
                 }
                 else 
                 {
+                    UIManager.Instance.infoPanel.IntimacyFill.gameObject.SetActive(true);
+                    //UIManager.Instance.infoPanel.cursor.gameObject.SetActive(true);
                     UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall ? incomeForMid : incomeForBig,
-                      0, petTime);
+                      0, petTime,true);
                 }
 
 

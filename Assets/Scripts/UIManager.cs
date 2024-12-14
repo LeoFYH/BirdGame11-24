@@ -29,9 +29,9 @@ public class UIManager : MonoBehaviour
         storePanel.Init();
     }
 
-    public void ShowInfoPanel(GameObject go, int price, string s1, string s2, int level, float progress, float progress2)
+    public void ShowInfoPanel(GameObject go, int price, string s1, string s2, int level, float progress, float progress2, bool cursorOn)
     {
-        infoPanel.Init(go, price, s1, s2, level, progress,progress2);
+        infoPanel.Init(go, price, s1, s2, level, progress,progress2, cursorOn);
     }
     
     public void RefreshCoin()

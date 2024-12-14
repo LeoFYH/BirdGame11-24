@@ -82,7 +82,7 @@ public class BirdEatState : StateBase
                             //GameManager.Instance.nests.Remove(_brid.nest);
                             _brid.isSmall = false;
                             Debug.Log("Bigg");
-                            UIManager.Instance.infoPanel.ToggleBar();
+                           // UIManager.Instance.infoPanel.ToggleBar();
                             _brid.distance = Vector3.Distance(_brid.transform.position, _brid.nestPos);
                         }
 
