@@ -5,6 +5,7 @@ public class StorePanel : MonoBehaviour
 {
     public Text coinTxt;
     public Button btn_Buy;
+    public GameObject HatchPage;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class StorePanel : MonoBehaviour
             UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
             GameManager.Instance.CreateBrid();
             Close();
+            //HatchPage.SetActive(true);
         }
         else
         {

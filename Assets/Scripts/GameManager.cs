@@ -76,8 +76,9 @@ public class GameManager : MonoBehaviour
         noOpenEggs = 3;
         for (int i = 0; i < 3; i++)
         {
+
             GameObject go = Instantiate(eggPre);
-            go.transform.position = new Vector3(i, go.transform.position.y);
+            go.transform.position = new Vector3((i-1)*2, 0, 0);
         }
     }
 
