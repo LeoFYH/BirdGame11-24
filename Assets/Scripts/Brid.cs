@@ -71,6 +71,8 @@ public class Brid : MonoBehaviour
 
     private float startTimer = 0;
 
+    private float petTime = 0;
+
     void Start()
     {
         scaleX = transform.localScale.x;
@@ -126,20 +128,44 @@ public class Brid : MonoBehaviour
                     title = "Adult bird";
                     desc = "It's an adult bird";
                 }
+                if (isSmall)
+                {
+                    UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall ? incomeForMid : incomeForBig,
+                        eatFoodCount * 1f / 20, 0);
+                }
+                else 
+                {
+                    UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall ? incomeForMid : incomeForBig,
+                      0, petTime);
+                }
 
-                UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall? incomeForMid : incomeForBig,
-                    eatFoodCount * 1f / 20);
+
             }
             if (Input.GetMouseButtonDown(0))
             {
                 if (!isSmall)
                 {
                     Debug.Log("Feather!");
-                    Vector3 spawnLocation= new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
-                    Instantiate(heartPre, spawnLocation, Quaternion.identity);
-                    GameManager.Instance.coin ++;
-                    UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
+                    GameObject go = Instantiate(heartPre); 
+                    Vector2 newPosition = new Vector2(transform.position.x - 0.2f, transform.position.y + 0.2f);
+                    go.transform.position = newPosition;
+                    petTime += 0.1f;
+                    GameManager.Instance.coin += 1;
+                    UIManager.Instance.RefreshCoin();
+                    if(petTime > 0.5)
+                    {
+                        Feather feather = go.GetComponent<Feather>();
+                        if (feather != null)
+                        {
+                            feather.moveSpeed = 10; // 设置速度
+                            GameManager.Instance.coin += 3;
+                            UIManager.Instance.RefreshCoin();
+                        }
+
+                    }
+
                 }
+               
 
             }
 
