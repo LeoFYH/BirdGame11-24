@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class Brid : MonoBehaviour
 {
-    [Header("Ð¡Äñ´óÐ¡")]
+    [Header("Ð¡ï¿½ï¿½ï¿½Ð¡")]
     public float smallScale = 0.01f;
-    [Header("ÖÐµÈÄñ´óÐ¡")]
+    [Header("ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ð¡")]
     public float middleScale = 0.09f;
-    [Header("´óÄñ´óÐ¡")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡")]
     public float largeScale = 0.12f;
-    [Header("·Éµ½Ô¶´¦Ð¡Äñ´óÐ¡")] 
+    [Header("ï¿½Éµï¿½Ô¶ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ð¡")] 
     public float farAwayScale = 0.06f;
     public Transform nestTrans;
     public Vector3 originalPos;
@@ -41,22 +41,22 @@ public class Brid : MonoBehaviour
     public int smallPrice = 20;
     public int bigPrice = 30;
     public int level = 1;
-    public string title="Ó×Äñ";
-    public string desc="ÕâÊÇÒ»Ö»Ó×Äñ";
+    public string title="ï¿½ï¿½ï¿½ï¿½";
+    public string desc="ï¿½ï¿½ï¿½ï¿½Ò»Ö»ï¿½ï¿½ï¿½ï¿½";
     public Transform heartPos;
     bool isFirst=true;
-    [Header("µã»÷µÄ´ÎÊýºóÄñ¸úËæÊó±êÒÆ¶¯")]
+    [Header("ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½")]
     public int clickCount = 5;
     bool isFollow;
     float followTime = 10;
     float followTimer;
-    [Header("³Ô¼¸´ÎÊ³Îï±äÖÐÄñ")]
+    [Header("ï¿½Ô¼ï¿½ï¿½ï¿½Ê³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public int eatCountForMid = 3;
-    [Header("³Ô¼¸´ÎÊ³Îï±ä³ÉÄñ")]
+    [Header("ï¿½Ô¼ï¿½ï¿½ï¿½Ê³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public int eatCountForBig = 2;
-    [Header("³ûÄñÈÕÊÕÒæ")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public int incomeForMid;
-    [Header("³ÉÄñÈÕÊÕÒæ")]
+    [Header("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public int incomeForBig;
     public float scaleX;
     public float distance;
@@ -130,6 +130,19 @@ public class Brid : MonoBehaviour
                 UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall? incomeForMid : incomeForBig,
                     eatFoodCount * 1f / 20);
             }
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (!isSmall)
+                {
+                    Debug.Log("Feather!");
+                    Vector3 spawnLocation= new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
+                    Instantiate(heartPre, spawnLocation, Quaternion.identity);
+                    GameManager.Instance.coin ++;
+                    UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
+                }
+
+            }
+
         }
         
         _stateMachine.OnUpdate();
@@ -350,7 +363,7 @@ public class Brid : MonoBehaviour
 
     private void AddCoins()
     {
-        Debug.Log("Ôö¼Ó½ð±Ò");
+        Debug.Log("ï¿½ï¿½ï¿½Ó½ï¿½ï¿½");
         if (isSmall)
         {
             GameManager.Instance.coin += incomeForMid;

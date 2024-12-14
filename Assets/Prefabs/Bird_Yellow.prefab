@@ -178,16 +178,16 @@ MonoBehaviour:
   isFlying: 0
   inNestTime: 5
   isInNest: 0
-  heartPre: {fileID: 3924312272529882276, guid: defa4a20ea266a8409cde16fb893e782, type: 3}
+  heartPre: {fileID: 4319206358577329428, guid: 1b1407fb5a984994f874b58e70fc781d, type: 3}
   smallPrice: 30
   bigPrice: 50
   level: 1
   title: Juvenile birds
   desc: This is a young bird
   heartPos: {fileID: 7580150105710783560}
-  clickCount: 10
-  eatCountForMid: 10
-  eatCountForBig: 10
+  clickCount: 1
+  eatCountForMid: 1
+  eatCountForBig: 1
   incomeForMid: 10
   incomeForBig: 30
   scaleX: 0
