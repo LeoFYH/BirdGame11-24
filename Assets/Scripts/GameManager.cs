@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using QFramework;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public int coin = 100;
+    public GraphicRaycaster _GraphicRaycaster;
+    public BindableProperty<int> coin =new BindableProperty<int>(100);
     public int eggPackage = 100;
     public GameObject eggPre;
     public GameObject foodPre;
+    public Transform[] birdPositions;
     public List<Food> foods;
     public List<Nest> nests;
     public List<Transform> flyPositions;
@@ -55,20 +59,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void CreateFood()
+    private bool IsPointerBird()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        foreach (var result in results)
         {
-            if (hit.collider.tag == "Terrain")
+            if (result.gameObject.CompareTag("Bird"))
             {
-                Food food = Instantiate(foodPre).GetComponent<Food>();
-                food.isTargeted = false;
-                food.transform.position = hit.point;
-                foods.Add(food);
+                return true;
             }
         }
+
+        return false;
+    }
+
+    void CreateFood()
+    {
+
+        // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // RaycastHit hit;
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+        if (hit.collider!=null && hit.collider.tag == "Terrain")
+        {
+            Food food = Instantiate(foodPre).GetComponent<Food>();
+            food.isTargeted = false;
+            food.transform.position = hit.point;
+            foods.Add(food);
+        }
+
     }
 
     public void CreateBrid()
@@ -78,6 +100,15 @@ public class GameManager : MonoBehaviour
         {
             GameObject go = Instantiate(eggPre);
             go.transform.position = new Vector3(i, go.transform.position.y);
+        }
+    }
+
+    public void CreateBirds(int count, GameObject birdPrefab)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            var obj = GameObject.Instantiate(birdPrefab);
+            obj.transform.position = birdPositions[i].position;
         }
     }
 

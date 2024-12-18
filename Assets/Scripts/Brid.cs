@@ -64,6 +64,7 @@ public class Brid : MonoBehaviour
     public float eatFoodTime = 1;
     float eatFoodTimer;
     bool isEnter;
+    private int currentLove = 0;
 
     public Food currFood;
 
@@ -128,7 +129,14 @@ public class Brid : MonoBehaviour
                 }
 
                 UIManager.Instance.ShowInfoPanel(gameObject, isSmall ? smallPrice : bigPrice, title, desc, isSmall? incomeForMid : incomeForBig,
-                    eatFoodCount * 1f / 20);
+                    isSmall ? eatFoodCount * 1f / 20 : currentLove * 1f / 40, isSmall);
+            }
+
+            if (Input.GetMouseButtonDown(0) && !isSmall)
+            {
+                currentLove++;
+                var obj = GameObject.Instantiate(Resources.Load<GameObject>("Coin"));
+                obj.transform.position = transform.position;
             }
         }
         
@@ -353,13 +361,13 @@ public class Brid : MonoBehaviour
         Debug.Log("Ôö¼Ó½ð±Ò");
         if (isSmall)
         {
-            GameManager.Instance.coin += incomeForMid;
+            GameManager.Instance.coin.Value += incomeForMid;
         }
         else
         {
-            GameManager.Instance.coin += incomeForBig;
+            GameManager.Instance.coin.Value += incomeForBig;
         }
         
-        UIManager.Instance.RefreshCoin();
+        //UIManager.Instance.RefreshCoin();
     }
 }

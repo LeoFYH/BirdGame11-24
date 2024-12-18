@@ -25,6 +25,15 @@ public class BirdEatState : StateBase
         }
 
         Vector3 target = _brid.currFood.transform.position;
+        if (target.x < _brid.transform.position.x)
+        {
+            target += _brid.isSmall ? new Vector3(0.2f, 0.2f, 0) : new Vector3(0.4f, 0.4f, 0);
+        }
+        else
+        {
+            target += _brid.isSmall ? new Vector3(-0.1f, 0.2f, 0) : new Vector3(-0.4f, 0.4f, 0);
+        }
+
         if (Vector3.Distance(_brid.transform.position, target) > 0.1f)
         {
             _brid.sr.flipX = target.x > _brid.transform.position.x;
@@ -106,6 +115,14 @@ public class BirdEatState : StateBase
     {
         if (_brid.isSmall)
         {
+            Food food;
+            if (GameManager.Instance.TryGetUntargetedFood(out food))
+            {
+                _brid.currFood = food;
+                currMachine.ChangeState<BirdEatState>();
+                return;
+            }
+
             int random = Random.Range(0, 2);
             if (random == 0)
             {
@@ -132,6 +149,5 @@ public class BirdEatState : StateBase
                 currMachine.ChangeState<BirdFlyState>();
             }
         }
-
     }
 }

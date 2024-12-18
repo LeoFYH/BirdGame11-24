@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 343863069046991754}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Untagged
+  m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 7270674382561921263}
   m_Layer: 0
   m_Name: Bird_Yellow
-  m_TagString: Untagged
+  m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8396582a19ee404db14cb7468039943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smallScale: 0.01
+  middleScale: 0.09
+  largeScale: 0.12
+  farAwayScale: 0.06
   nestTrans: {fileID: 0}
   originalPos: {x: 0, y: 0, z: 0}
   nestPos: {x: 0, y: 0, z: 0}
@@ -208,7 +212,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -248,7 +252,7 @@ GameObject:
   - component: {fileID: 7580150105710783560}
   m_Layer: 0
   m_Name: Heart
-  m_TagString: Untagged
+  m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -27,7 +27,7 @@ public class BirdFlyState : StateBase
             _brid.transform.DOScale(_brid.farAwayScale, flyTime).SetEase(Ease.Linear).OnComplete(() =>
             {
                 _brid.sr.sortingLayerName = "middle";
-                _brid.sr.sortingOrder = 0;
+                _brid.sr.sortingOrder = 5;
             });
         }
         _brid.transform.DOMove(target, flyTime).SetEase(Ease.Linear).OnComplete(() =>

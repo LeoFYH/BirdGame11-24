@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using QFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +15,11 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        coinTxt.text = GameManager.Instance.coin.ToString();
+        GameManager.Instance.coin.Register(v =>
+        {
+            coinTxt.text = v.ToString();
+        }).UnRegisterWhenGameObjectDestroyed(gameObject);
+        coinTxt.text = GameManager.Instance.coin.Value.ToString();
     }
 
     public void CreatePrompt(string s)
@@ -29,13 +34,8 @@ public class UIManager : MonoBehaviour
         storePanel.Init();
     }
 
-    public void ShowInfoPanel(GameObject go, int price, string s1, string s2, int level, float progress)
+    public void ShowInfoPanel(GameObject go, int price, string s1, string s2, int level, float progress, bool isSmall)
     {
-        infoPanel.Init(go, price, s1, s2, level, progress);
-    }
-    
-    public void RefreshCoin()
-    {
-        coinTxt.text = GameManager.Instance.coin.ToString();
+        infoPanel.Init(go, price, s1, s2, level, progress, isSmall);
     }
 }

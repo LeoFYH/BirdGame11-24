@@ -1,46 +1,90 @@
+using System;
+using QFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StorePanel : MonoBehaviour
 {
     public Text coinTxt;
-    public Button btn_Buy;
+    public Button btn_Close;
+    public GameObject eggPanel;
+    public EggSaleItem[] items;
+    /// <summary>
+    /// 购买最大数量
+    /// </summary>
+    public const int maxCount = 5;
+    private int currentCount = 0;
 
-    private void Awake()
+    private void OnEnable()
     {
-        btn_Buy.onClick.AddListener(Buy);
+        currentCount = 0;
+        CheckLimit();
+    }
+
+    private void Start()
+    {
+        GameManager.Instance.coin.Register(v =>
+        {
+            coinTxt.text = v.ToString();
+        }).UnRegisterWhenGameObjectDestroyed(gameObject);
+        coinTxt.text = GameManager.Instance.coin.ToString();
+        
+        btn_Close.onClick.AddListener(() =>
+        {
+            if (currentCount > 0)
+            {
+                var obj = GameObject.Instantiate(eggPanel, transform.parent);
+                var panel = obj.GetComponent<EggPanel>();
+                panel.Init(currentCount);
+            }
+            
+            gameObject.SetActive(false);
+        });
+
+        foreach (var item in items)
+        {
+            item.onCheckLimitAction = CheckLimit;
+        }
     }
 
     public void Init()
     {
-        coinTxt.text = GameManager.Instance.coin.ToString();
         gameObject.SetActive(true);
     }
 
-    public void Close()
-    {
-        gameObject.SetActive(false);
-    }
+    // private void Buy()
+    // {
+    //     Debug.Log("buy");
+    //     if (GameManager.Instance.noOpenEggs > 0)
+    //     {
+    //         UIManager.Instance.CreatePrompt("There are also eggs that have not hatched");
+    //         return;
+    //     }
+    //     if (GameManager.Instance.coin.Value >= GameManager.Instance.eggPackage)
+    //     {
+    //         GameManager.Instance.coin.Value -= GameManager.Instance.eggPackage;
+    //         coinTxt.text = GameManager.Instance.coin.ToString();
+    //         UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
+    //         GameManager.Instance.CreateBrid();
+    //         Close();
+    //     }
+    //     else
+    //     {
+    //         UIManager.Instance.CreatePrompt("Insufficient coins");
+    //     }
+    // }
 
-    private void Buy()
+    private void CheckLimit()
     {
-        Debug.Log("buy");
-        if (GameManager.Instance.noOpenEggs > 0)
+        currentCount = 0;
+        foreach (var item in items)
         {
-            UIManager.Instance.CreatePrompt("There are also eggs that have not hatched");
-            return;
+            currentCount += item.BoughtCount;
         }
-        if (GameManager.Instance.coin >= GameManager.Instance.eggPackage)
+
+        foreach (var item in items)
         {
-            GameManager.Instance.coin -= GameManager.Instance.eggPackage;
-            coinTxt.text = GameManager.Instance.coin.ToString();
-            UIManager.Instance.coinTxt.text = GameManager.Instance.coin.ToString();
-            GameManager.Instance.CreateBrid();
-            Close();
-        }
-        else
-        {
-            UIManager.Instance.CreatePrompt("Insufficient coins");
+            item.btn_Add.interactable = currentCount < maxCount && item.salePrice <= GameManager.Instance.coin.Value;
         }
     }
 }
