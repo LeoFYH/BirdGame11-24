@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public List<Food> foods;
     public List<Nest> nests;
     public List<Transform> flyPositions;
+    public GameObject[] birdPrefabs;
     public int noOpenEggs;
     public float createFoodTime = 0.5f;
     float foodTimer;
@@ -109,6 +110,18 @@ public class GameManager : MonoBehaviour
         {
             var obj = GameObject.Instantiate(birdPrefab);
             obj.transform.position = birdPositions[i].position;
+        }
+    }
+
+    public void CreateBirds(Dictionary<BirdType, int> boughts)
+    {
+        foreach (var boughtItem in boughts)
+        {
+            for (int i = 0; i < boughtItem.Value; i++)
+            {
+                var obj = GameObject.Instantiate(birdPrefabs[(int)boughtItem.Key]);
+                obj.transform.position = birdPositions[i].position;
+            }
         }
     }
 

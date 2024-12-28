@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using QFramework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class StorePanel : MonoBehaviour
     /// </summary>
     public const int maxCount = 5;
     private int currentCount = 0;
+    private Dictionary<BirdType, int> boughtDic = new Dictionary<BirdType, int>();
 
     private void OnEnable()
     {
@@ -35,7 +37,7 @@ public class StorePanel : MonoBehaviour
             {
                 var obj = GameObject.Instantiate(eggPanel, transform.parent);
                 var panel = obj.GetComponent<EggPanel>();
-                panel.Init(currentCount);
+                panel.Init(currentCount, boughtDic);
             }
             
             gameObject.SetActive(false);
@@ -76,9 +78,15 @@ public class StorePanel : MonoBehaviour
 
     private void CheckLimit()
     {
+        boughtDic.Clear();
         currentCount = 0;
         foreach (var item in items)
         {
+            if (item.BoughtCount > 0)
+            {
+                boughtDic.Add(item.type, item.BoughtCount);
+            }
+
             currentCount += item.BoughtCount;
         }
 

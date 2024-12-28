@@ -6,27 +6,45 @@ using UnityEngine.UI;
 public class EggItem : MonoBehaviour, IPointerClickHandler
 {
     public Action onCheckClickAction;
+    public BirdType BirdType {
+        get
+        {
+            return _type;
+        }
+        set
+        {
+            _type = value;
+            
+        }
+    }
     public bool IsClicked { get; private set; } = false;
     public Animator egg;
-    public Image bird;
+    public GameObject[] birds;
+    public Image ThisImage {
+        get
+        {
+            if (thisImage == null)
+                thisImage = GetComponent<Image>();
+            return thisImage;
+        }
+    }
 
     private Image thisImage;
+    private BirdType _type;
 
     private bool clicked = false;
 
     private void Start()
     {
-        thisImage = GetComponent<Image>();
-        thisImage.color = Color.white;
+        ThisImage.color = Color.white;
         egg.gameObject.SetActive(true);
-        bird.gameObject.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if(clicked) return;
         
-        thisImage.color = new Color32(255, 255, 255, 0);
+        ThisImage.color = new Color32(255, 255, 255, 0);
         egg.Play("Broken");
         clicked = true;
     }
@@ -34,7 +52,7 @@ public class EggItem : MonoBehaviour, IPointerClickHandler
     public void OnAnimationComplete()
     {
         egg.gameObject.SetActive(false);
-        bird.gameObject.SetActive(true);
+        birds[(int)_type].SetActive(true);
         IsClicked = true;
         onCheckClickAction?.Invoke();
     }
