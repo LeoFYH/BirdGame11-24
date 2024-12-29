@@ -9,14 +9,13 @@ public class EggPanel : MonoBehaviour
 
     private int eggCount;
     private EggItem[] eggs;
-    private Dictionary<BirdType, int> boughts;
+    private List<BirdConfig> _birdTypes = new List<BirdConfig>();
 
-    public void Init(int count, Dictionary<BirdType, int> boughts)
+    public void Init(int count, Dictionary<EggType, int> boughts)
     {
         eggCount = count;
         eggs = new EggItem[count];
         int index = 0;
-        this.boughts = boughts;
         foreach (var bird in boughts)
         {
             for (int i = 0; i < bird.Value; i++)
@@ -25,15 +24,16 @@ public class EggPanel : MonoBehaviour
                 obj.SetActive(true);
                 eggs[index] = obj.GetComponent<EggItem>();
                 eggs[index].ThisImage.sprite = eggBGs[(int)bird.Key];
-                eggs[index].BirdType = bird.Key;
+                eggs[index].EggType = bird.Key;
                 eggs[index].onCheckClickAction = CheckClick;
                 index++;
             }
         }
     }
 
-    private void CheckClick()
+    private void CheckClick(BirdConfig bird)
     {
+        _birdTypes.Add(bird);
         foreach (var egg in eggs)
         {
             if(!egg.IsClicked)
@@ -46,7 +46,7 @@ public class EggPanel : MonoBehaviour
     private void Next()
     {
         //GameManager.Instance.CreateBirds(eggCount, birdObj);
-        GameManager.Instance.CreateBirds(boughts);
+        GameManager.Instance.CreateBirds(_birdTypes);
         Destroy(gameObject);
     }
 }

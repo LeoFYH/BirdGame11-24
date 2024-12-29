@@ -15,7 +15,7 @@ public class StorePanel : MonoBehaviour
     /// </summary>
     public const int maxCount = 5;
     private int currentCount = 0;
-    private Dictionary<BirdType, int> boughtDic = new Dictionary<BirdType, int>();
+    private Dictionary<EggType, int> boughtDic = new Dictionary<EggType, int>();
 
     private void OnEnable()
     {

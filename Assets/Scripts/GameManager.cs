@@ -1,16 +1,18 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using QFramework;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GraphicRaycaster _GraphicRaycaster;
     public BindableProperty<int> coin =new BindableProperty<int>(100);
-    public int eggPackage = 100;
+    public int eggMax = 50;
     public GameObject eggPre;
     public GameObject foodPre;
     public Transform[] birdPositions;
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     public List<Nest> nests;
     public List<Transform> flyPositions;
     public GameObject[] birdPrefabs;
+    public EggConfig[] eggConfigs;
     public int noOpenEggs;
     public float createFoodTime = 0.5f;
     float foodTimer;
@@ -113,15 +116,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CreateBirds(Dictionary<BirdType, int> boughts)
+    public void CreateBirds(List<BirdConfig> boughts)
     {
-        foreach (var boughtItem in boughts)
+        int count = boughts.Count;
+        for (int i = 0; i < count; i++)
         {
-            for (int i = 0; i < boughtItem.Value; i++)
-            {
-                var obj = GameObject.Instantiate(birdPrefabs[(int)boughtItem.Key]);
-                obj.transform.position = birdPositions[i].position;
-            }
+            var obj = GameObject.Instantiate(boughts[i].birdPrefab);
+            obj.transform.position = birdPositions[i].position;
         }
     }
 
@@ -166,5 +167,19 @@ public class GameManager : MonoBehaviour
 
         food = null;
         return false;
+    }
+
+    public BirdConfig RandomGetBird(EggType type)
+    {
+        foreach (var egg in eggConfigs)
+        {
+            if (egg.eggType == type)
+            {
+                int index = Random.Range(0, egg.birds.Length);
+                return egg.birds[index];
+            }
+        }
+
+        return null;
     }
 }

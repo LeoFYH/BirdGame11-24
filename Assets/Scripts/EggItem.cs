@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class EggItem : MonoBehaviour, IPointerClickHandler
 {
-    public Action onCheckClickAction;
-    public BirdType BirdType {
+    public Action<BirdConfig> onCheckClickAction;
+    public EggType EggType {
         get
         {
             return _type;
@@ -30,7 +30,7 @@ public class EggItem : MonoBehaviour, IPointerClickHandler
     }
 
     private Image thisImage;
-    private BirdType _type;
+    private EggType _type;
 
     private bool clicked = false;
 
@@ -52,8 +52,9 @@ public class EggItem : MonoBehaviour, IPointerClickHandler
     public void OnAnimationComplete()
     {
         egg.gameObject.SetActive(false);
-        birds[(int)_type].SetActive(true);
+        var bird = GameManager.Instance.RandomGetBird(EggType);
+        birds[(int)bird.birdType].SetActive(true);
         IsClicked = true;
-        onCheckClickAction?.Invoke();
+        onCheckClickAction?.Invoke(bird);
     }
 }

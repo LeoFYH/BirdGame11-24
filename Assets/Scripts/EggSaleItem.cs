@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BirdType
+public enum EggType
 {
     Bird_Common = 0,
     Bird_Rare = 1,
@@ -11,11 +11,17 @@ public enum BirdType
     Bird_Mythic = 4
 }
 
+public enum BirdType
+{
+    Yellow = 0,
+    Red = 1
+}
+
 public class EggSaleItem : MonoBehaviour
 {
     public Action onCheckLimitAction;
     [Header("类型")]
-    public BirdType type;
+    public EggType type;
     [Header("单个鸟蛋的价格")]
     public int salePrice = 15;
     public Text text_Price;
