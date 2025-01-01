@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Brid : MonoBehaviour
 {
+    public BirdType type;
     [Header("小鸟大小")]
     public float smallScale = 0.01f;
     [Header("中等鸟大小")]
@@ -89,6 +90,24 @@ public class Brid : MonoBehaviour
         _stateMachine.AddState(new BirdFlyAirState(_stateMachine));
         _stateMachine.AddState(new BirdFlyInAirState(_stateMachine));
         startTimer = Time.time;
+    }
+
+    public void Init(float eatCount)
+    {
+        eatFoodCount = eatCount;
+        isSmall = eatCount < eatCountForBig;
+        if (eatFoodCount < eatCountForMid)
+        {
+            //transform.localScale = Vector3.one * smallScale;
+        }
+        else if (eatCount < eatCountForBig)
+        {
+            transform.localScale = Vector3.one * middleScale;
+        }
+        else
+        {
+            transform.localScale = Vector3.one * largeScale;
+        }
     }
 
     private void OnMouseDown()

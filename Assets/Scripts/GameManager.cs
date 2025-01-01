@@ -21,14 +21,61 @@ public class GameManager : MonoBehaviour
     public List<Transform> flyPositions;
     public GameObject[] birdPrefabs;
     public EggConfig[] eggConfigs;
+    public BirdConfig[] birdConfigs;
     public int noOpenEggs;
     public float createFoodTime = 0.5f;
     float foodTimer;
     public GameObject numPre;
+    public List<Brid> BirdList { get; } = new List<Brid>();
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void Init(GameData data)
+    {
+        coin.Value = data.coins;
+        int count = data.birds.Count;
+        for (int i = 0; i < count; i++)
+        {
+            float x = Random.Range(-8, 8);
+            float y = Random.Range(-4.5f, -4f);
+            var target = new Vector3(x, y);
+            var obj = GameObject.Instantiate(GetBirdPrefab(data.birds[i].type));
+            obj.transform.position = target;
+            var bird = obj.GetComponent<Brid>();
+            bird.type = data.birds[i].type;
+            bird.Init(data.birds[i].eatFoodCount);
+            BirdList.Add(bird);
+        }
+    }
+
+    public GameData GetGameData()
+    {
+        var data = new GameData();
+        data.coins = coin.Value;
+        int count = BirdList.Count;
+        data.birds = new List<BirdData>(count);
+        for (int i = 0; i < count; i++)
+        {
+            var bird = new BirdData();
+            bird.eatFoodCount = BirdList[i].eatFoodCount;
+            bird.type = BirdList[i].type;
+            data.birds.Add(bird);
+        }
+        return data;
+    }
+
+    private GameObject GetBirdPrefab(BirdType type)
+    {
+        foreach (var config in birdConfigs)
+        {
+            if (config.birdType == type)
+                return config.birdPrefab;
+        }
+
+        return null;
     }
 
     public void CreateNum(string s, Vector3 pos)
@@ -123,6 +170,9 @@ public class GameManager : MonoBehaviour
         {
             var obj = GameObject.Instantiate(boughts[i].birdPrefab);
             obj.transform.position = birdPositions[i].position;
+            var bird = obj.GetComponent<Brid>();
+            bird.type = boughts[i].birdType;
+            BirdList.Add(bird);
         }
     }
 
